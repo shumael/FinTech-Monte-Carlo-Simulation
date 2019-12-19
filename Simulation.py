@@ -6,21 +6,21 @@ import matplotlib.pyplot as plots
 import locale
 locale.setlocale(locale.LC_ALL, 'en_CA.UTF-8')
 
-pv = 10000
+pv = 1000
 time_horizon = 30
 i =.07
-additions = 10000
+additions = 1000
 
 for year in range(time_horizon):
     ending = pv * (1+i) + additions
     print(locale.currency(ending, grouping=True))
     pv = ending
 
-pv = 10000
+pv = 1000
 expected_return = .09
 volatility = .18
 time_horizon = 30
-annual_addition = 10000
+annual_addition = 1000
 
 print("\tReturn", "\t\tEnding Value".rjust(18))
 for year in range(time_horizon):
@@ -37,8 +37,8 @@ for x in range(iterations):
     expected_return = .09
     volatility = .18
     time_horizon = 30
-    pv = 10000
-    annual_investment = 10000
+    pv = 1000
+    annual_investment = 1000
     stream = []
     for i in range(time_horizon):
         end = round(pv * (1 + np.random.normal(expected_return,volatility)) + annual_investment,2)
