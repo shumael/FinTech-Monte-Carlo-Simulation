@@ -7,7 +7,7 @@ import locale
 locale.setlocale(locale.LC_ALL, 'en_CA.UTF-8')
 
 pv = 1000
-time_horizon = 30
+time_horizon = 20
 i =.07
 additions = 1000
 
@@ -19,7 +19,7 @@ for year in range(time_horizon):
 pv = 1000
 expected_return = .09
 volatility = .18
-time_horizon = 30
+time_horizon = 20
 annual_addition = 1000
 
 print("\tReturn", "\t\tEnding Value".rjust(18))
@@ -36,7 +36,7 @@ iterations = 5000
 for x in range(iterations):
     expected_return = .09
     volatility = .18
-    time_horizon = 30
+    time_horizon = 20
     pv = 1000
     annual_investment = 1000
     stream = []
